@@ -1,0 +1,31 @@
+name: 💡 想要一个新技能
+description: 希望 Claude 能替你做某件事
+labels: ["skill request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **说清你想让 Claude 替你做的那件事就够了，不用描述怎么实现。**
+        「每周把公众号后台数据导出成表格」比「加一个 export_analytics 工具」有用得多。
+  - type: textarea
+    id: job
+    attributes:
+      label: 你想让 Claude 做什么
+      placeholder: 把一篇 markdown 发成微信公众号图文，封面我自己给
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: 哪个平台 / 网站
+      placeholder: 微信公众号 mp.weixin.qq.com
+  - type: textarea
+    id: now
+    attributes:
+      label: 你现在是怎么做的
+      description: 手工做要多久？哪一步最烦？—— 这决定了技能该优化哪里
+  - type: textarea
+    id: traps
+    attributes:
+      label: 你知道的坑（可选，但很值钱）
+      description: 这个平台有什么反自动化校验、限流规则、必须手工确认的步骤？

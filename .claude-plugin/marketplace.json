@@ -1,0 +1,17 @@
+{
+  "name": "unzooai-skills",
+  "description": "Claude Skills for Unzoo Browser — publish to WeChat MP, X and more through a real browser, with per-account isolation.",
+  "owner": {
+    "name": "Unzoo AI",
+    "url": "https://unzoo.ai"
+  },
+  "plugins": [
+    {
+      "name": "unzoo",
+      "source": "./",
+      "displayName": "Unzoo Browser",
+      "description": "Publish and automate on real websites through Unzoo Browser. Installs the Unzoo MCP connection for you.",
+      "version": "0.1.0"
+    }
+  ]
+}

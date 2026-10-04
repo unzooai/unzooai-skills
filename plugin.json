@@ -1,0 +1,28 @@
+{
+  "name": "unzoo",
+  "displayName": "Unzoo Browser",
+  "version": "0.1.0",
+  "description": "Publish and automate on real websites through Unzoo Browser — a Chromium build made for AI agents, with per-account isolation and a fingerprint that matches real Chrome.",
+  "author": {
+    "name": "Unzoo AI",
+    "url": "https://unzoo.ai"
+  },
+  "homepage": "https://unzoo.ai",
+  "repository": "https://github.com/unzooai/unzooai-skills",
+  "license": "MIT",
+  "keywords": ["browser", "automation", "publishing", "wechat", "x", "twitter", "mcp"],
+  "compatibility": "Requires Unzoo Browser installed on this machine (https://unzoo.ai/download) and Node.js 18+ to launch the MCP bridge.",
+  "metadata": {
+    "externalDependency": "unzoo-browser",
+    "externalDependencyUrl": "https://unzoo.ai/download"
+  },
+  "mcpServers": {
+    "unzoo": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/bin/launcher.mjs"],
+      "env": {
+        "UNZOO_CLIENT": "claude-code"
+      }
+    }
+  }
+}

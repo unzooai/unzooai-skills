@@ -1,0 +1,48 @@
+name: 🐛 技能失效了
+description: 某个技能跑不通，或者平台改版导致它不工作
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **平台改版导致失效是最常见的情况，报告它非常有价值** —— 我们不可能盯着所有平台。
+  - type: input
+    id: skill
+    attributes:
+      label: 哪个技能
+      placeholder: publish-x
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Claude 卡在哪一步
+      description: 它做到哪里停了 / 做错了什么。有截图最好 —— 页面结构变成什么样，一眼能看出来
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: 报错原文
+      description: 如果有 error_code（比如 profile_unresolved / cross_profile_denied）请一并贴上
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: Unzoo 版本
+      description: 开始菜单 → Unzoo Browser，或 `unzoo --version`
+      placeholder: 2.5.47
+  - type: dropdown
+    id: os
+    attributes:
+      label: 系统
+      options: [Windows, macOS, Linux]
+    validations:
+      required: true
+  - type: checkboxes
+    id: no-secrets
+    attributes:
+      label: 确认
+      options:
+        - label: 我贴的内容里没有账号、密码、cookie 或 token
+          required: true

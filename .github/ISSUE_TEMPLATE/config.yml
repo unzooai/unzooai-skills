@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 经验交流 / 怎么用
+    url: https://github.com/unzooai/unzooai-skills/discussions
+    about: 使用心得、提问、分享你的做法 —— 这里比 issue 更合适
+  - name: 🔒 安全问题
+    url: https://github.com/unzooai/unzooai-skills/security/advisories/new
+    about: 请不要开公开 issue。走私密报告通道
+  - name: ⬇️ 下载 Unzoo Browser
+    url: https://unzoo.ai/download
+    about: 技能需要先装浏览器本体
