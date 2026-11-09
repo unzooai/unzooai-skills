@@ -50,14 +50,23 @@ Claude 说「把这篇文章发到公众号」「这条配图发一下 X」，�
 
 ## 技能清单
 
-> 正在建设中 —— 第一批技能随附近的版本发布。
-> 想要某个平台？[开个 issue 告诉我们](https://github.com/unzooai/unzooai-skills/issues/new/choose)。
+> 想要某个新平台？[开个 issue 告诉我们](https://github.com/unzooai/unzooai-skills/issues/new/choose)。
 
 | 技能 | 做什么 | 状态 |
 |---|---|---|
-| `publish-wechat-mp` | 发微信公众号图文（含封面、排版、预览确认） | 建设中 |
-| `publish-x` | 发 X / Twitter（含图片、视频、长文） | 建设中 |
-| `publish-multi` | 一次发多个平台，一号一环境互不干扰 | 规划中 |
+| [`publish-wechat-mp`](./skills/publish-wechat-mp/SKILL.md) | 发微信公众号图文草稿（`CF_HTML` 富文本粘贴、从正文选封面、声明文字原创、草稿箱核验，群发留给人按） | ✅ 已上线 |
+| [`publish-toutiao`](./skills/publish-toutiao/SKILL.md) | 发今日头条号图文长文（旧草稿清理、封面自动抓取等待与「编辑替换」原图尺寸匹配、首发控制、`vis=40` 档位自检） | ✅ 已上线 |
+| [`publish-juejin`](./skills/publish-juejin/SKILL.md) | 发稀土掘金技术文章（CodeMirror 灌入、分类/摘要必填、搜索式标签匹配与下拉浮层收起） | ✅ 已上线 |
+| [`publish-zhihu`](./skills/publish-zhihu/SKILL.md) | 发知乎专栏文章（DraftJS 富文本粘贴、零宽空格按钮处理、新闻来源门槛检测与转场轮询） | ✅ 已上线 |
+| [`publish-weibo`](./skills/publish-weibo/SKILL.md) | 发新浪微博图文短帖（导航落地等待、受控输入框赋值、最右侧发送键动态定位与清空核验） | ✅ 已上线 |
+| [`publish-x`](./skills/publish-x/SKILL.md) | 发 X / Twitter 推文与长文 Articles（含图片、视频、头图、Cloudflare 验证预防与限流红线保护） | ✅ 已上线 |
+| [`publish-linkedin`](./skills/publish-linkedin/SKILL.md) | 发 LinkedIn 动态与链接卡片（`share-offsite` 稳定入口、同源 `iframe` 粘贴与顶层 Shadow DOM 发布） | ✅ 已上线 |
+| [`publish-reddit`](./skills/publish-reddit/SKILL.md) | 发 Reddit 社区帖子（穿透 `<post-composer-title>` Shadow DOM 填标题、防 AutoMod 裸链拦截） | ✅ 已上线 |
+| [`publish-devto`](./skills/publish-devto/SKILL.md) | 发 Dev.to 英文技术文章（Forem API、`User-Agent` 防 403、`canonical_url` 原文权重绑定与回读核验） | ✅ 已上线 |
+| [`publish-xiaohongshu`](./skills/publish-xiaohongshu/SKILL.md) | 发小红书图文笔记（创作者中心「上传图文」切换、多图 trusted 上传、20 字标题红线与 ProseMirror 正文） | ✅ 已上线 |
+| [`publish-fanqie`](./skills/publish-fanqie/SKILL.md) | 发番茄小说章节与封面（章节列表重名防呆校验、`browser_upload_trusted` 封面上传与日更配额管理） | ✅ 已上线 |
+| [`publish-multi`](./skills/publish-multi/SKILL.md) | 多平台矩阵协同分发（一号一环境隔离、两条内容线防假首发护栏、20 分钟错峰排期与故障降级汇总） | ✅ 已上线 |
+| [`verify-install`](./skills/verify-install/SKILL.md) | 逐条验证本机 Unzoo 的环境隔离、真实指纹、真人输入与错误契约 | ✅ 已上线 |
 
 ---
 
