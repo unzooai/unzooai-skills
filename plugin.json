@@ -10,7 +10,7 @@
   "homepage": "https://unzoo.ai",
   "repository": "https://github.com/unzooai/unzooai-skills",
   "license": "MIT",
-  "keywords": ["browser", "automation", "publishing", "wechat", "x", "twitter", "mcp"],
+  "keywords": ["browser", "automation", "publishing", "wechat", "toutiao", "juejin", "zhihu", "weibo", "x", "twitter", "linkedin", "reddit", "devto", "xiaohongshu", "fanqie", "mcp"],
   "compatibility": "Requires Unzoo Browser installed on this machine (https://unzoo.ai/download) and Node.js 18+ to launch the MCP bridge.",
   "metadata": {
     "externalDependency": "unzoo-browser",
